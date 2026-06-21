@@ -1,0 +1,15 @@
+[project]
+name = "technical-cookbooks"
+version = "0.1.0"
+description = "A personal collection of technical cookbooks written as Jupytext-compatible Python files."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "jupytext",
+    "pandas",
+    "sqlalchemy",
+    "ipykernel",
+]
+
+[tool.uv]
+package = false

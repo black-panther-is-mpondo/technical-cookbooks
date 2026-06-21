@@ -1,0 +1,20 @@
+.
+├── README.md
+├── assets
+│   └── images
+│       └── README.md
+├── cookbooks
+│   ├── airflow
+│   ├── data-engineering
+│   ├── pandas
+│   ├── python
+│   │   └── 001-example-cookbook.py
+│   └── sql
+├── data
+│   ├── processed
+│   └── raw
+├── jupytext.toml
+├── requirements.txt
+└── tree.txt
+
+12 directories, 6 files
