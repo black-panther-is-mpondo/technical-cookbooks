@@ -1,30 +1,47 @@
-# Python
+# Python cache
 __pycache__/
 *.py[cod]
+*$py.class
 
 # Virtual environments
 .venv/
 venv/
 env/
-
-# Jupyter
-.ipynb_checkpoints/
-*.ipynb
+ENV/
 
 # Environment files
 .env
+.env.*
+!.env.example
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
 
 # OS files
 .DS_Store
 Thumbs.db
 
-# Logs
-*.log
+# Editor files
+.vscode/
+.idea/
 
-# Data files
+# Raw data should not be tracked by default
 data/raw/*
+!data/raw/.gitkeep
+
+# Processed data should not be tracked by default
 data/processed/*
 
-# Keep empty data folders
-!data/raw/.gitkeep
-!data/processed/.gitkeep
+# Allow official cookbook SQLite databases
+!data/processed/sql/
+!data/processed/sql/*.sqlite
+
+# Ignore other local database formats by default
+*.db
+*.sqlite3
+
+# But still allow cookbook SQLite files
+!data/processed/sql/*.sqlite
